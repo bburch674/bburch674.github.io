@@ -1,0 +1,20 @@
+Amatrix <- c(1, 2, 2, 
+                     0, 2, 1,
+                   -1, 2, 2)
+
+A <- matrix(data = Amatrix, ncol = 3, byrow = TRUE)
+A
+
+solve(A)
+det(A)
+eigen(A)
+A%*%solve(A)
+t(A)
+sum(diag(A))
+
+library(matlib)
+R(A)
+
+library(MASS)
+ginv(A)
+
